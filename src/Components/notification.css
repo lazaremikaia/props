@@ -1,0 +1,85 @@
+
+
+
+.notification{
+    max-width: 923px;
+    border-radius: 20px;
+    background-color: rgba(47, 48, 50, 1);
+    display: flex;
+    gap: 100px;
+    padding: 43px 63px;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    position: relative;
+
+}
+
+.n-green::before{
+    background-color: #00CC99;
+}
+
+.n-red::before{
+    background-color: red;
+}
+
+.n-yellow::before{
+    background-color: yellow
+}
+
+.n-blue::before{
+    background-color: blue;
+}
+.notification::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 10px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.icon-wrapper{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #00CC99;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.n-green .icon-wrapper{
+    background-color: #00CC99;
+}
+.n-red .icon-wrapper{
+    background-color: red;
+}
+.n-yellow .icon-wrapper{
+    background-color: yellow;
+}
+.n-blue .icon-wrapper{
+    background-color: blue;
+}
+
+@font-face {
+    font-family:'Popins';
+    src: url(./font/Poppins-Regular.ttf);
+  }
+
+
+.title{
+    font-size: 36px;
+    color: white;
+    font-family: "Poppins";
+}
+
+.description{
+    color: white;
+    width: 500px;
+    font-size: 24px;
+     
+     font-family: "Popons";
+}
